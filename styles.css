@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --darkgrey: #383838;
+  --headings:'Quicksand', sans-serif;
+  --monofont:'Cutive Mono', monospace;;
+}
+
+a {
+  display: block;
+  height: 30px;
+  padding: 10px;
+  width: 85%;
+}
+
+a:hover{
+  background-color: var(--darkgrey);
+  color: white;
+}
+
+body {
+  background-color: #F9F9F9;
+  color: #606060;
+  font-family: var(--headings);
+  font-size: 16.5px;
+  padding: 20px;
+}
+
+code {
+  background-color: #d7d7d7;
+  color: #343434;
+  display: block;
+  font-family: var(--monofont);
+  padding: 7px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--darkgrey);  
+}
+
+p {
+  max-width: 90%;
+}
+
+.ed-details {
+  font-style: italic;
+  margin-left: 1.1rem;
+  list-style-type: none;
+}
+
+.ed-list {
+    font-weight: bold;
+}
+
+.nav-link {
+  color: var(--darkgrey);
+  font-size: 20px;
+  font-style: none;
+  text-decoration: none;
+}
+
+.main-section {
+  line-height:2;
+  width: 70vw;
+}
+
+.main-section>header {
+  border-bottom: 2px solid #686868;
+  color: var(--darkgrey);
+  font-size: 20px;
+  font-family: var(--headings);
+  padding: 0 0 15px 0;
+  weight: 600;
+}
+
+.links {
+  color: var(--darkgrey);
+  display: inline;
+  font-style: italic;
+}
+
+#navbar {
+  background-color: #F8F8F8;
+  border-right: 2px solid gainsboro;
+  height: 100%;
+  left: 0;
+  list-style: none;
+  padding: 15px 0 0 30px;
+  position: fixed;
+  top: 0;
+  width: 270px;
+}
+
+#main-doc {
+  margin-left: 310px;
+  margin-right: 10px;
+  max-width: 75vw;
+}
+
+@media (max-width: 950px) {
+	
+  a {
+	background-color: #eee;
+	border-top: 1px solid #dedede;
+	padding: 5px;
+  }
+  
+  body code{
+	font-size: 15px;
+  }
+  
+  p {
+    max-width: 95%;
+  }
+  
+  .nav-link {
+	font-size: 16px;
+	max-width: 90vw;
+  }
+
+  .main-section>header {
+	font-size: 16px;
+  }
+  
+  .main-section {
+	width: 90vw;
+  }
+
+  #navbar {  
+	align-content: center;
+	border: none;
+    height: 40vh;
+	top: 0;
+	position: absolute;
+    width: 100vw;
+  }
+  
+  #main-doc {
+	margin: 0;
+    top: 310px;
+    position: relative;
+	width: 90vw;
+  }
+}
